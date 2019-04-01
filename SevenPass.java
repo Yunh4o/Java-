@@ -10,7 +10,7 @@ public class SevenPass {
 				System.out.print(i+"\t");
 				sum++;
 			}else {
-				System.out.print("\t");
+				System.out.print("*\t");
 			}
 			if(i%10==0) {
 				System.out.println();
