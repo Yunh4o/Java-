@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Servlet_02</display-name>
+  <servlet>
+    <servlet-name>servlet01</servlet-name>
+    <servlet-class>com.servlet.Serverlet01</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servlet01</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+    <url-pattern>/login.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletLifeCircle</display-name>
+    <servlet-name>ServletLifeCircle</servlet-name>
+    <servlet-class>com.servlet.ServletLifeCircle</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLifeCircle</servlet-name>
+    <url-pattern>/ServletLifeCircle</url-pattern>
+    <url-pattern>/lifecircle</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Servlet02</display-name>
+    <servlet-name>Servlet02</servlet-name>
+    <servlet-class>com.servlet.Servlet02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet02</servlet-name>
+    <url-pattern>/Servlet02</url-pattern>
+    <url-pattern>/s02</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletPost</display-name>
+    <servlet-name>ServletPost</servlet-name>
+    <servlet-class>com.servlet.ServletPost</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletPost</servlet-name>
+
+    <url-pattern>/ServletPost</url-pattern>
+  </servlet-mapping>
+</web-app>
